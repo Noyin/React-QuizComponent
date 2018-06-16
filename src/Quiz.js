@@ -11,14 +11,14 @@ class Quiz extends Component {
     }
 
     handleResetClick () {
-        this.setState((prevState) => {
-            prevState.quiz_position = 1;
+        this.setState({
+            quiz_position: 1
         })
     }
 
     showNextQuestion () {
-        this.setState((prevState) => {
-            prevState.quiz_position = prevState.quiz_position + 1;
+        this.setState({
+            quiz_position: this.state.quiz_position + 1
         })
     }
 
